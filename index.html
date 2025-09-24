@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andean Fungus Business</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/icono_logo.png" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/primer logo.png" alt="Logo Andean Fungus" class="logo-img-real" width="200px" height="80px">
+            </a>            
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+            <!-- <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li> -->
+                <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Carrusel Hero -->
+    <div class="hero-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="slide-image" alt="Galletas de Hongos">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Galletas hechas exclusivamente con HONGOS NATURALES</h2>
+                        <p class="slide-description">Descubre el sabor único de nuestros productos 100% orgánicos y nutritivos</p>
+                        <a href="#productos" class="btn">Ver productos</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="https://cdn.pixabay.com/photo/2020/03/04/20/36/cookies-4902718_1280.jpg" class="slide-image" alt="Productos Fungibles">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Nueva Línea de Snacks Saludables</h2>
+                        <p class="slide-description">Crujientes, deliciosos y llenos de nutrientes con nuestros hongos andinos</p>
+                        <a href="#productos" class="btn">Comprar ahora</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="https://cdn.pixabay.com/photo/2018/09/06/19/53/mushrooms-3659165_1280.jpg" class="slide-image" alt="Ingredientes Naturales">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Ingredientes 100% Naturales</h2>
+                        <p class="slide-description">Cultivados de forma sostenible en los Andes Peruanos</p>
+                        <a href="#productos" class="btn">Conoce más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Ventajas de Andean Fungus -->
+    <section class="section" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Por qué elegir Andean Fungus?</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% Naturales</h3>
+                    <p>Utilizamos ingredientes cultivados de forma responsable, sin conservantes ni aditivos artificiales.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Envíos Rápidos</h3>
+                    <p>Hacemos entregas seguras en todo el Perú, directo hasta la puerta de tu hogar.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Saludables y Ricos</h3>
+                    <p>Snacks perfectos para una dieta balanceada, con gran sabor y sin remordimientos.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Para Toda la Familia</h3>
+                    <p>Ideal para niños, adultos y adultos mayores. Energía natural en cada bocado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios de Clientes -->
+    <section class="section testimonios-section" style="background-color: #fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonios-grid">
+                <div class="testimonio-item">
+                    <p>"Las galletas de hongos son una delicia. Me encanta saber que estoy comiendo algo saludable y sabroso al mismo tiempo."</p>
+                    <h4>— Rosa T., Cusco</h4>
+                </div>
+                <div class="testimonio-item">
+                    <p>"¡Los Funguchips son mi snack favorito ahora! Crujientes, naturales y sin culpa."</p>
+                    <h4>— Diego M., Lima</h4>
+                </div>
+                <div class="testimonio-item">
+                    <p>"Compré varios productos para mi familia y todos quedaron encantados. Ya son parte de nuestra lonchera."</p>
+                    <h4>— Andrea V., Arequipa</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo comprar -->
+    <section class="section como-comprar-section" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Cómo comprar?</h2>
+            </div>
+            <div class="pasos-grid">
+                <div class="paso-item">
+                    <i class="fas fa-cookie-bite"></i>
+                    <h3>1. Elige tu producto</h3>
+                    <p>Navega por nuestra tienda y selecciona tus favoritos. ¡No olvides ajustar la cantidad!</p>
+                </div>
+                <div class="paso-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>2. Pide por WhatsApp</h3>
+                    <p>Haz clic Fen el carrito y envíanos tu pedido automáticamente por WhatsApp.</p>
+                </div>
+                <div class="paso-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>3. Recíbelo en casa</h3>
+                    <p>Coordinamos el envío y ¡listo! Disfruta tus delicias naturales donde estés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Productos -->
+    <section class="section productos-section" id="productos" style="background-color: #fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>PRODUCTOS RELACIONADOS</h2>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/fungocookies.png" alt="Galleta de Hongos">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Fungookies</h3>
+                        <p class="product-description"><b>El snack perfecto para cualquier momento del día. </b>Descubre nuestras galletas Fungookies, hechas con harina de hongos de pino, una fuente natural de nutrientes esenciales. Cada bocado es una mezcla irresistible de sabor y salud, ideal para quienes buscan un snack delicioso y consciente. ¡Nutrición y energía en cada mordida!</p>
+                        <div class="product-price">S/3.00</div>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="2" min="0">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/funcereal.png" alt="Funguchips">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Funcereal</h3>
+                        <p class="product-description"><b>Tu desayuno nunca volverá a ser igual. </b>Comienza tus mañanas con el poder nutritivo del Funcereal, un cereal único elaborado con hongos de pino. Rico en fibra, proteínas y sabor auténtico, es ideal para toda la familia. Convierte cada desayuno en una experiencia saludable y deliciosa.</p>
+                        <div class="product-price">S/25.00</div>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="2" min="0">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/fungoton.png" alt="Fungoton">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Fungoton</h3>
+                        <p class="product-description"><b>El clásico de las fiestas, reinventado. </b>El clásico de las fiestas, reinventado»
+Celebra con nuestro Fungutón, un panetón innovador hecho con harina de hongos de pino. Suave, esponjoso y con un toque único, es la opción perfecta para disfrutar momentos especiales mientras cuidas de tu salud. Tradición y nutrición en cada rebanada.</p>
+                        <div class="product-price">S/25.00</div>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/nutrifunbar.png" alt="Fungoton">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Nutrifunbar</h3>
+                        <p class="product-description"><b>Energía natural en tus manos. </b>Nuestra NutrifunguBar es más que una barra nutritiva: es una explosión de sabor y bienestar. Elaborada con hongos de pino y una combinación de ingredientes naturales, esta barra te brinda la energía que necesitas para afrontar tu día, mientras cuidas tu salud y el planeta. Perfecta para llevar a donde quieras.</p>
+                        <div class="product-price">S/2.50</div>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/harina.png" alt="Fungoton">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Harina de hongos precocida 250Gr</h3>
+                        <p class="product-description"><b>El ingrediente perfecto para una nutrición superior. </b>Nuestra Harina de Hongos de Pino es 100% natural, rica en proteínas, fibra y antioxidantes. Versátil y fácil de usar, es ideal para enriquecer tus recetas favoritas, desde panes y pasteles hasta sopas y salsas. ¡Lleva la salud y el sabor de los Andes a tu cocina!</p>
+                        <div class="product-price">S/49.90</div>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/fondo blanco.png" width="200px" height="80px" alt="Imagen no encontrada">
+                    </div>
+                    <p>Somos una empresa dedicada a la producción de alimentos orgánicos y saludables, comprometidos con tu bienestar y el medio ambiente.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61566596853963&rdid=JkYuelktHrBtlOzU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ESGoGFKLz%2F" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/andeanfungus?igsh=MWtqY2d0ZXEyODhmeQ%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="tel:+51927638174" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-container">
+                    <h3 class="footer-title">Enlaces rápidos</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li class="footer-link-item"><a href="nosotros.html" class="footer-link">Sobre nosotros</a></li>
+                        <li class="footer-link-item"><a href="contacto.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contacto</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cusco - Perú</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span><a href="tel:+51927638174" class="telefono-link">+51 927 638 174</a></span>
+                    </div>
+                    
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:andeanfungusbusiness24@gmail.com" class="correo-link">andeanfungusbusiness24@gmail.com</a></span>
+                    </div>
+                    
+
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Lun-Vie: 9am - 6pm</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Andean Fungus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal del Carrito -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <h3 class="cart-modal-title">Tu Pedido</h3>
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">No hay productos en el carrito</div>
+            </div>
+            <div class="cart-total" id="cartTotal">
+                Total: S/0.00
+            </div>
+            <div class="cart-actions">
+                <button class="cart-btn cart-btn-close" id="closeCart">Seguir Comprando</button>
+                <a href="#" class="cart-btn cart-btn-whatsapp" id="whatsappBtn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar carrusel
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        
+        // Menu móvil
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Carrito de compras
+        let cart = [];
+                function saveCartToLocalStorage() {
+                    localStorage.setItem('cartData', JSON.stringify(cart));
+                }
+
+        // Función para actualizar el contador del carrito
+        function updateCartCount() {
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            document.querySelector('.cart-count').textContent = totalItems;
+        }
+        
+        // Función para mostrar el carrito en el modal
+        function renderCart() {
+            const cartItemsElement = document.getElementById('cartItems');
+            const cartTotalElement = document.getElementById('cartTotal');
+
+            if (cart.length === 0) {
+                cartItemsElement.innerHTML = '<div class="empty-cart">No hay productos en el carrito</div>';
+                cartTotalElement.textContent = 'Total: S/0.00';
+                document.getElementById('whatsappBtn').style.display = 'none';
+                return;
+            }
+
+            document.getElementById('whatsappBtn').style.display = 'flex';
+
+            let itemsHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                itemsHTML += `
+                    <div class="cart-item">
+                        <div class="cart-item-container">
+                            <div class="cart-item-info">
+                                <span class="cart-item-name">${item.name}</span>
+                                <div class="cart-item-actions">
+                                    <button class="cart-item-decrease" data-index="${index}">−</button>
+                                    <span class="cart-item-quantity">${item.quantity}</span>
+                                    <button class="cart-item-increase" data-index="${index}">+</button>
+                                </div>
+                            </div>
+                            
+                            <div class="">
+                                <span class="cart-item-price">S/${itemTotal.toFixed(2)}</span>
+                                <button class="cart-item-remove" data-index="${index}">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cartItemsElement.innerHTML = itemsHTML;
+            cartTotalElement.textContent = `Total: S/${total.toFixed(2)}`;
+
+            // WhatsApp actualizado
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            let message = '¡Hola! Quiero hacer el siguiente pedido:\n\n';
+            cart.forEach(item => {
+                message += `- ${item.name} (Cantidad: ${item.quantity}) - S/${(item.price * item.quantity).toFixed(2)}\n`;
+            });
+            message += `\n*Total: S/${total.toFixed(2)}*`;
+            message += '\n\nPor favor, confírmenme la disponibilidad y forma de pago. ¡Gracias!';
+            const encodedMessage = encodeURIComponent(message);
+            whatsappBtn.href = `https://wa.me/51927638174?text=${encodedMessage}`;
+
+            // Botón eliminar
+            document.querySelectorAll('.cart-item-remove').forEach(button => {
+                button.addEventListener('click', function () {
+                    const index = this.getAttribute('data-index');
+                    cart.splice(index, 1);
+                    saveCartToLocalStorage();
+                    updateCartCount();
+                    renderCart();
+                });
+            });
+
+            // Botón aumentar
+            document.querySelectorAll('.cart-item-increase').forEach(button => {
+                button.addEventListener('click', function () {
+                    const index = this.getAttribute('data-index');
+                    cart[index].quantity += 1;
+                    saveCartToLocalStorage();
+                    updateCartCount();
+                    renderCart();
+                });
+            });
+
+            // Botón disminuir
+            document.querySelectorAll('.cart-item-decrease').forEach(button => {
+                button.addEventListener('click', function () {
+                    const index = this.getAttribute('data-index');
+                    cart[index].quantity -= 1;
+                    if (cart[index].quantity <= 0) {
+                        cart.splice(index, 1);
+                    }
+                    saveCartToLocalStorage();
+                    updateCartCount();
+                    renderCart();
+                });
+            });
+        }
+ 
+        // Funcionalidad del contador
+        document.querySelectorAll('.quantity-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('.quantity-input');
+                let value = parseInt(input.value);
+                
+                if (this.classList.contains('plus')) {
+                    value++;
+                } else {
+                    value = value > 0 ? value - 1 : 0;
+                }
+                
+                input.value = value;
+            });
+        });
+        
+        // Validar input manual
+        document.querySelectorAll('.quantity-input').forEach(input => {
+            input.addEventListener('change', function() {
+                if (this.value < 0 || isNaN(this.value)) {
+                    this.value = 0;
+                }
+            });
+        });
+        
+        // Añadir al carrito
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('.product-title').textContent;
+                const productPrice = parseFloat(productCard.querySelector('.product-price').textContent.replace('S/', ''));
+                const quantity = parseInt(productCard.querySelector('.quantity-input').value);
+                
+                if (quantity > 0) {
+                    const existingItem = cart.find(item => item.name === productName);
+                    if (existingItem) {
+                        existingItem.quantity += quantity;
+                    } else {
+                        cart.push({
+                            name: productName,
+                            price: productPrice,
+                            quantity: quantity
+                        });
+                    }
+
+                    saveCartToLocalStorage();
+                    updateCartCount();
+                    renderCart();
+
+                    // Animación de confirmación
+                    this.innerHTML = '<i class="fas fa-check"></i> Añadido';
+                    this.style.backgroundColor = '#4CAF50';
+
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-shopping-cart"></i> Agregar al carrito';
+                        this.style.backgroundColor = '';
+                    }, 2000);
+                } else {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Cantidad inválida',
+                        text: 'No puedes agregar este producto al carrito porque la cantidad es 0. Por favor, aumenta la cantidad.',
+                        confirmButtonColor: '#d9bd8f',
+                        confirmButtonText: 'Entendido'
+                    });
+                }
+
+            });
+        });
+        
+        // Abrir modal del carrito
+        document.getElementById('cartIcon').addEventListener('click', function() {
+            document.getElementById('cartModal').style.display = 'flex';
+            renderCart();
+        });
+        
+        // Cerrar modal del carrito
+        document.getElementById('closeCart').addEventListener('click', function() {
+            document.getElementById('cartModal').style.display = 'none';
+        });
+        
+        // Cerrar modal al hacer clic fuera del contenido
+        document.getElementById('cartModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+        
+        // Detectar página actual y marcar enlace activo
+        function setActiveLink() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+        
+        // Ejecutar al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedCart = localStorage.getItem('cartData');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCartCount();
+                renderCart();
+            }
+            setActiveLink();
+        });
+    </script>
+</body>
+</html>
